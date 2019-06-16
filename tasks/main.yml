@@ -1,3 +1,15 @@
 - name: debug
   debug:
     msg: "jeste ldape"
+- name: create entry
+  ldap_entry:
+    dn: "{{ldap_entry.dn}}"
+    objectClass: "{{ldap_entry.objectClass}}"
+    attributes: "{{ldap_entry.attributes|default(omit)}}"
+    state: "{{ldap_entry.state|default(omit)}}"
+    bind_dn: "cn={{bindDN}}"
+    bind_pw: "{{bindPW}}"
+    server_uri: "ldap://127.0.0.1"
+  loop: "{{content}}"
+  loop_control:
+    loop_var: ldap_entry

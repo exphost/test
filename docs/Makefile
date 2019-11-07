@@ -12,11 +12,8 @@ BUILDDIR      = .
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-rst: Makefile
-	echo "aaa"
-	@$(SPHINXBUILD) -b rst "$(SOURCEDIR)" ..
 markdown: Makefile
-	@$(SPHINXBUILD) -b markdown "$(SOURCEDIR)" ..
+	@$(SPHINXBUILD) -b markdown "$(SOURCEDIR)" .. -t readme
 
 .PHONY: help Makefile
 

@@ -10,6 +10,8 @@ Welcome to exphost.ldap's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   content/general
+
 
 
 Indices and tables

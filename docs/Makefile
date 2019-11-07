@@ -15,6 +15,8 @@ help:
 rst: Makefile
 	echo "aaa"
 	@$(SPHINXBUILD) -b rst "$(SOURCEDIR)" ..
+markdown: Makefile
+	@$(SPHINXBUILD) -b markdown "$(SOURCEDIR)" ..
 
 .PHONY: help Makefile
 

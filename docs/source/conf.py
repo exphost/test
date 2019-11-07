@@ -28,6 +28,7 @@ author = 'TORGiren'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinxcontrib.restbuilder',
+        'sphinx_markdown_builder',
 
 ]
 

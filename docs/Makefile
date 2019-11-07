@@ -14,7 +14,7 @@ help:
 
 rst: Makefile
 	echo "aaa"
-	@$(SPHINXBUILD) -b rst "$(SOURCEDIR)" .
+	@$(SPHINXBUILD) -b rst "$(SOURCEDIR)" ..
 
 .PHONY: help Makefile
 
